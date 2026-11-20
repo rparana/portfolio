@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Rafael Paraná — Arquiteto Frontend & Engenheiro de Software",
+    "description": "Portfólio de Rafael Paraná — Arquiteto Frontend Principal & Engenheiro de Software."
+  },
+  "nav": {
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "status": {
+    "initialized": "Ambiente inicializado"
+  }
+}
