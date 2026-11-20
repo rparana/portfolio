@@ -3,7 +3,7 @@ role: Tech Lead & Multi-Cloud Governance
 company: Medprev
 period: JUN 2020 – MAY 2021
 current: false
-order: 3
+order: 4
 stack:
   - Node.js
   - Vue.js

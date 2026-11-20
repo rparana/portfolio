@@ -77,6 +77,10 @@ const structuredData = computed(() =>
           '@type': 'CollegeOrUniversity',
           name: 'UniCesumar',
         },
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Artcoder',
+        },
       },
       {
         '@type': 'WebSite',

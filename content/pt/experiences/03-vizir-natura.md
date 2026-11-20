@@ -3,7 +3,7 @@ role: Engenheiro de Software Sênior / Referência Técnica
 company: Vizir • Squad Natura
 period: MAI 2021 – MAR 2022
 current: false
-order: 2
+order: 3
 stack:
   - Node.js
   - TypeScript

@@ -3,7 +3,7 @@ role: Platform Engineering Tech Lead
 company: Questrade Financial Group
 period: MAY 2022 – APR 2026
 current: false
-order: 1
+order: 2
 stack:
   - Apache Kafka
   - Debezium
