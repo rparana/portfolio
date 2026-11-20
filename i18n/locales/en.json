@@ -9,7 +9,9 @@
     "projects": "Projects",
     "contact": "Contact",
     "downloadCv": "DOWNLOAD CV",
-    "localeSwitch": "PT / EN"
+    "localeSwitch": "PT / EN",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "status": {
     "badge": "AVAILABLE FOR TECH LEAD & PRINCIPAL ARCHITECT ROLES"
@@ -17,24 +19,32 @@
   "hero": {
     "headline": "Designing resilient distributed systems, high-throughput data pipelines, and empowering engineering teams.",
     "bio": "Hands-on Tech Lead & Software Architect with 24+ years of experience bridging business strategy and technical execution. Specialized in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Clean Architecture with Node.js & TypeScript.",
+    "ctaPrimary": "Get in Touch",
+    "ctaSecondary": "Explore Architecture & Work",
     "location": "PONTAL DO PARANÁ, BRAZIL • B2+ ENGLISH",
+    "portraitRole": "PRINCIPAL ARCHITECT • TECH LEAD",
     "metrics": [
       {
+        "number": "01",
         "value": "24+ Years",
         "label": "Software Engineering"
       },
       {
+        "number": "02",
         "value": "99.9% SLA",
         "label": "Mission-Critical APIs"
       },
       {
+        "number": "03",
         "value": "Multi-Cloud",
         "label": "GCP, AWS & Azure"
       }
     ]
   },
   "matrix": {
-    "title": "Architecture & Work",
+    "eyebrow": "CORE CAPABILITIES / 01–04",
+    "title": "Architectural matrix",
+    "subtitle": "Core engineering pillars combining distributed systems architecture, event streaming, cloud platform governance, and technical leadership.",
     "items": [
       {
         "number": "01",
@@ -82,9 +92,30 @@
       }
     ]
   },
-  "sections": {
-    "experience": "Experience",
-    "projects": "Selected Engineering Projects",
-    "contact": "Contact"
+  "experience": {
+    "eyebrow": "CAREER TIMELINE / 2001–2026",
+    "title": "Experience",
+    "subtitle": "Twenty-four years of hands-on software engineering, platform governance, and squad leadership."
+  },
+  "projects": {
+    "eyebrow": "SELECTED WORK / 01–03",
+    "title": "Selected Engineering Projects",
+    "subtitle": "Production systems and architectural proofs of concept exploring concurrency, edge delivery, and offline-first mobility.",
+    "viewProject": "VIEW PROJECT",
+    "closeDrawer": "Close project details",
+    "architectureDiagram": "SYSTEM ARCHITECTURE",
+    "technicalDetails": "ENGINEERING CASE STUDY",
+    "liveSite": "VISIT LIVE SITE",
+    "sourceCode": "VIEW SOURCE ON GITHUB"
+  },
+  "footer": {
+    "eyebrow": "START A CONVERSATION",
+    "headline": "Let’s discuss architecture, platform engineering, or technical leadership.",
+    "emailLabel": "EMAIL (CLICK TO COPY)",
+    "copied": "Copied!",
+    "whatsappLabel": "WHATSAPP",
+    "socialLabel": "PROFILES",
+    "backToTop": "BACK TO TOP",
+    "copyright": "Rafael Paraná. Built with Nuxt 4 & Tailwind CSS v4."
   }
 }

@@ -40,3 +40,15 @@
     }
   }
 }
+
+/* Native <dialog> modal scroll containment & backdrop styling */
+dialog.arch-drawer:modal {
+  overscroll-behavior: contain;
+}
+
+dialog.arch-drawer::backdrop {
+  background-color: rgba(11, 17, 32, 0.72);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
