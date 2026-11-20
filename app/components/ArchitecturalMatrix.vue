@@ -22,14 +22,14 @@ const matrixItems = computed<MatrixItem[]>(() => {
 </script>
 
 <template>
-  <section id="architecture" class="border-t border-slate-200 py-20 lg:py-24">
+  <section id="architecture" aria-labelledby="matrix-heading" class="border-t border-slate-200 py-20 lg:py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-1 items-end gap-6 pb-10 lg:grid-cols-12">
         <div class="lg:col-span-7">
           <p class="font-mono text-xs font-medium tracking-widest text-accent">
             {{ t('matrix.eyebrow') }}
           </p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+          <h2 id="matrix-heading" class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             {{ t('matrix.title') }}
           </h2>
         </div>

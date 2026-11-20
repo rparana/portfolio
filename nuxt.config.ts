@@ -14,6 +14,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/fonts',
     '@nuxt/eslint',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -24,6 +26,20 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
+  },
+
+  site: {
+    url: 'https://rafaelparana.me',
+    name: 'Rafael Paraná — Principal Software Architect & Hands-on Tech Lead',
+  },
+
+  robots: {
+    allow: ['/'],
+    sitemap: ['https://rafaelparana.me/sitemap.xml'],
+  },
+
+  sitemap: {
+    zeroRuntime: true,
   },
 
   content: {
@@ -78,30 +94,15 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Rafael Paraná — Tech Lead & Software Architect',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          name: 'description',
-          content: 'Hands-on Tech Lead & Software Architect with 24+ years of experience in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Node.js & TypeScript.',
-        },
         { name: 'theme-color', content: '#F8FAFC' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Rafael Paraná' },
-        { property: 'og:url', content: 'https://rafaelparana.me' },
-        {
-          property: 'og:title',
-          content: 'Rafael Paraná — Tech Lead & Software Architect',
-        },
-        {
-          property: 'og:description',
-          content: 'Hands-on Tech Lead & Software Architect with 24+ years of experience in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Node.js & TypeScript.',
-        },
-        { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://rafaelparana.me' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       ],
     },
   },

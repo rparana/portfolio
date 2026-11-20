@@ -12,14 +12,14 @@ const { data: experiences } = await useAsyncData(
 </script>
 
 <template>
-  <section id="experience" class="border-t border-slate-200 bg-white py-20 lg:py-24">
+  <section id="experience" aria-labelledby="experience-heading" class="border-t border-slate-200 bg-white py-20 lg:py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-1 items-end gap-6 pb-12 lg:grid-cols-12">
         <div class="lg:col-span-7">
           <p class="font-mono text-xs font-medium tracking-widest text-accent">
             {{ t('experience.eyebrow') }}
           </p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+          <h2 id="experience-heading" class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             {{ t('experience.title') }}
           </h2>
         </div>

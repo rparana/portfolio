@@ -1,7 +1,8 @@
 {
   "meta": {
-    "title": "Rafael Paraná — Tech Lead & Arquiteto de Software",
-    "description": "Tech Lead Hands-on & Arquiteto de Software com 24+ anos de experiência em Arquitetura Orientada a Eventos, streaming com Kafka/CDC, governança Multi-Cloud/FinOps e Clean Architecture com Node.js & TypeScript."
+    "title": "Rafael Paraná — Arquiteto de Software Principal & Tech Lead Hands-on",
+    "description": "Tech Lead Hands-on e Arquiteto de Software com 24+ anos de experiência em Arquitetura Orientada a Eventos, streaming com Apache Kafka/CDC, governança Multi-Cloud e Node.js/TypeScript.",
+    "ogImageAlt": "Rafael Paraná — Arquiteto de Software Principal & Tech Lead Hands-on"
   },
   "nav": {
     "architecture": "Arquitetura & Atuação",

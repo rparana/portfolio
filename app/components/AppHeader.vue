@@ -6,6 +6,10 @@ const switchLocalePath = useSwitchLocalePath()
 
 const isMobileMenuOpen = ref(false)
 
+const cvHref = computed(() =>
+  locale.value === 'en' ? '/cv-rafael-parana-en.pdf' : '/cv-rafael-parana.pdf',
+)
+
 const navLinks = computed(() => [
   { href: '#architecture', label: t('nav.architecture') },
   { href: '#experience', label: t('nav.experience') },
@@ -25,7 +29,13 @@ function closeMobileMenu() {
         href="#top"
         class="inline-flex items-center gap-2.5 font-mono text-sm font-medium tracking-tight text-ink"
       >
-        <span class="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
+        <img
+          src="/images/rpLogo.png"
+          alt="Rafael Paraná"
+          width="36"
+          height="28"
+          class="h-7 w-auto object-contain"
+        >
         <span>rafaelparana.me</span>
       </a>
 
@@ -42,7 +52,7 @@ function closeMobileMenu() {
 
       <div class="flex items-center gap-3">
         <a
-          href="/cv-rafael-parana.pdf"
+          :href="cvHref"
           download
           class="hidden items-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-1.5 font-mono text-xs font-medium tracking-wide text-ink transition-colors hover:border-ink sm:inline-flex"
         >
@@ -85,7 +95,7 @@ function closeMobileMenu() {
           {{ link.label }}
         </a>
         <a
-          href="/cv-rafael-parana.pdf"
+          :href="cvHref"
           download
           class="mt-2 inline-flex w-fit items-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-1.5 font-mono text-xs font-medium tracking-wide text-ink"
           @click="closeMobileMenu"

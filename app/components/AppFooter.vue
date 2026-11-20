@@ -28,13 +28,13 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <footer id="contact" class="bg-[#062419] pt-24 pb-12 text-white">
+  <footer id="contact" aria-labelledby="contact-heading" class="bg-[#062419] pt-24 pb-12 text-white">
     <div class="mx-auto max-w-6xl px-6">
       <div class="max-w-3xl space-y-6">
         <p class="font-mono text-xs font-medium tracking-widest text-emerald-300">
           {{ t('footer.eyebrow') }}
         </p>
-        <h2 class="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 id="contact-heading" class="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
           {{ t('footer.headline') }}
         </h2>
       </div>
@@ -49,6 +49,7 @@ onBeforeUnmount(() => {
           </p>
           <button
             type="button"
+            :aria-label="`${t('footer.emailLabel')}: ${email}`"
             class="inline-flex cursor-pointer items-center gap-2.5 text-left text-base font-medium text-white transition-colors hover:text-emerald-200"
             @click="copyEmail"
           >
@@ -111,9 +112,20 @@ onBeforeUnmount(() => {
       <div
         class="mt-16 flex flex-col items-start justify-between gap-4 border-t border-emerald-900/80 pt-8 sm:flex-row sm:items-center"
       >
-        <p class="font-mono text-xs text-emerald-200/70">
-          © {{ new Date().getFullYear() }} {{ t('footer.copyright') }}
-        </p>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center rounded bg-[#F8FAFC] px-2 py-1">
+            <img
+              src="/images/rpLogo.png"
+              alt="RP"
+              width="26"
+              height="20"
+              class="h-4 w-auto object-contain"
+            >
+          </span>
+          <p class="font-mono text-xs text-emerald-200/70">
+            © {{ new Date().getFullYear() }} {{ t('footer.copyright') }}
+          </p>
+        </div>
 
         <a
           href="#top"

@@ -59,14 +59,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="projects" class="bg-[#0B1120] py-24 text-white">
+  <section id="projects" aria-labelledby="projects-heading" class="bg-[#0B1120] py-24 text-white">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-1 items-end gap-6 pb-12 lg:grid-cols-12">
         <div class="lg:col-span-7">
           <p class="font-mono text-xs font-medium tracking-widest text-blue-400">
             {{ t('projects.eyebrow') }}
           </p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 id="projects-heading" class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {{ t('projects.title') }}
           </h2>
         </div>
@@ -108,6 +108,7 @@ onMounted(() => {
           <div class="flex lg:col-span-3 lg:justify-end">
             <button
               type="button"
+              :aria-label="`${t('projects.viewProject')}: ${project.title}`"
               class="inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-slate-700 bg-slate-900/60 px-4 py-2 font-mono text-xs font-medium tracking-wider text-white transition-colors hover:border-blue-400 hover:text-blue-300"
               @click="openDrawer(project)"
             >

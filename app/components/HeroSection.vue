@@ -24,7 +24,7 @@ const metrics = computed<HeroMetric[]>(() => {
 </script>
 
 <template>
-  <section id="top" class="mx-auto max-w-6xl px-6 py-16 lg:py-24">
+  <section id="top" aria-labelledby="hero-headline" class="mx-auto max-w-6xl px-6 py-16 lg:py-24">
     <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-12">
       <!-- Left Column (60%) -->
       <div class="space-y-8 lg:col-span-7">
@@ -43,6 +43,7 @@ const metrics = computed<HeroMetric[]>(() => {
         </div>
 
         <h1
+          id="hero-headline"
           class="text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]"
         >
           {{ t('hero.headline') }}
@@ -89,7 +90,11 @@ const metrics = computed<HeroMetric[]>(() => {
             >
               <img
                 src="/images/rafael-portrait.jpeg"
-                alt="Rafael Paraná"
+                alt="Rafael Paraná — Principal Software Architect & Hands-on Tech Lead"
+                width="800"
+                height="1000"
+                loading="eager"
+                fetchpriority="high"
                 class="h-full w-full object-cover object-top"
               >
               <div

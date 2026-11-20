@@ -10,3 +10,7 @@
 /cv-rafael-parana.pdf
   Content-Disposition: inline; filename="cv-rafael-parana.pdf"
   Cache-Control: public, max-age=86400
+
+/cv-rafael-parana-en.pdf
+  Content-Disposition: inline; filename="cv-rafael-parana-en.pdf"
+  Cache-Control: public, max-age=86400

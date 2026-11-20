@@ -29,6 +29,8 @@
     "@nuxt/content": "^3.17.0",
     "@nuxt/fonts": "^1.2.0",
     "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/robots": "^7.0.2",
+    "@nuxtjs/sitemap": "^9.1.0",
     "@tailwindcss/vite": "^4.3.5",
     "lucide-vue-next": "^1.0.0",
     "nuxt": "^4.6.4",

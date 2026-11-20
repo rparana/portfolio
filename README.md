@@ -49,7 +49,8 @@ pnpm install
 Before deploying to production, ensure the following static assets exist in `public/`:
 
 - `public/images/rafael-portrait.jpeg` — Hero portrait photo (4:5 aspect ratio recommended)
-- `public/cv-rafael-parana.pdf` — Resume PDF linked from the header `DOWNLOAD CV` button
+- `public/cv-rafael-parana.pdf` — Resume PDF in Portuguese
+- `public/cv-rafael-parana-en.pdf` — Resume PDF in English
 
 ### Development
 
