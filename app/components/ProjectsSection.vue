@@ -167,93 +167,10 @@ onMounted(() => {
             <p class="font-mono text-xs font-medium tracking-widest text-blue-400">
               {{ t('projects.architectureDiagram') }}
             </p>
-            <div class="rounded-xl border border-slate-800 bg-slate-950/70 p-4">
-              <!-- Diagram 1: Seat Reservation POC -->
-              <svg
-                v-if="selectedProject.order === 1"
-                viewBox="0 0 640 170"
-                class="h-auto w-full"
-                role="img"
-                aria-label="High-Concurrency Seat Reservation Architecture"
-              >
-                <rect x="12" y="55" width="120" height="58" rx="8" fill="#0F172A" stroke="#334155" />
-                <text x="72" y="81" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Clients</text>
-                <text x="72" y="98" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">HTTP + SSE</text>
-
-                <line x1="132" y1="84" x2="188" y2="84" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4 3" />
-
-                <rect x="188" y="55" width="140" height="58" rx="8" fill="#0F172A" stroke="#2563EB" />
-                <text x="258" y="81" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Node.js API</text>
-                <text x="258" y="98" text-anchor="middle" fill="#60A5FA" font-size="9" font-family="monospace">Lock + SSE Stream</text>
-
-                <line x1="328" y1="70" x2="404" y2="42" stroke="#059669" stroke-width="1.5" />
-                <line x1="328" y1="98" x2="404" y2="126" stroke="#64748B" stroke-width="1.5" />
-
-                <rect x="404" y="14" width="220" height="54" rx="8" fill="#0F172A" stroke="#059669" />
-                <text x="514" y="38" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Redis</text>
-                <text x="514" y="54" text-anchor="middle" fill="#34D399" font-size="9" font-family="monospace">Atomic Seat Lock + TTL</text>
-
-                <rect x="404" y="100" width="220" height="54" rx="8" fill="#0F172A" stroke="#334155" />
-                <text x="514" y="124" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">MongoDB</text>
-                <text x="514" y="140" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">Confirmed Reservations</text>
-              </svg>
-
-              <!-- Diagram 2: jogosdeairsoft.com.br -->
-              <svg
-                v-else-if="selectedProject.order === 2"
-                viewBox="0 0 640 140"
-                class="h-auto w-full"
-                role="img"
-                aria-label="jogosdeairsoft.com.br System Architecture"
-              >
-                <rect x="12" y="40" width="130" height="58" rx="8" fill="#0F172A" stroke="#334155" />
-                <text x="77" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Cloudflare</text>
-                <text x="77" y="83" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">Edge Cache + DNS</text>
-
-                <line x1="142" y1="69" x2="178" y2="69" stroke="#2563EB" stroke-width="1.5" />
-
-                <rect x="178" y="40" width="136" height="58" rx="8" fill="#0F172A" stroke="#2563EB" />
-                <text x="246" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Nuxt 4</text>
-                <text x="246" y="83" text-anchor="middle" fill="#60A5FA" font-size="9" font-family="monospace">SSR + SEO Routes</text>
-
-                <line x1="314" y1="69" x2="350" y2="69" stroke="#2563EB" stroke-width="1.5" />
-
-                <rect x="350" y="40" width="130" height="58" rx="8" fill="#0F172A" stroke="#334155" />
-                <text x="415" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Node.js</text>
-                <text x="415" y="83" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">REST API Layer</text>
-
-                <line x1="480" y1="69" x2="516" y2="69" stroke="#059669" stroke-width="1.5" />
-
-                <rect x="516" y="40" width="112" height="58" rx="8" fill="#0F172A" stroke="#059669" />
-                <text x="572" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">MongoDB</text>
-                <text x="572" y="83" text-anchor="middle" fill="#34D399" font-size="9" font-family="monospace">Events &amp; Fields</text>
-              </svg>
-
-              <!-- Diagram 3: ProntoOrcei & MostruarioApp -->
-              <svg
-                v-else
-                viewBox="0 0 640 140"
-                class="h-auto w-full"
-                role="img"
-                aria-label="Offline-first Flutter Mobile Architecture"
-              >
-                <rect x="12" y="40" width="165" height="58" rx="8" fill="#0F172A" stroke="#2563EB" />
-                <text x="94" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Flutter App</text>
-                <text x="94" y="83" text-anchor="middle" fill="#60A5FA" font-size="9" font-family="monospace">Quotes &amp; Catalog UI</text>
-
-                <line x1="177" y1="69" x2="225" y2="69" stroke="#059669" stroke-width="1.5" />
-
-                <rect x="225" y="40" width="180" height="58" rx="8" fill="#0F172A" stroke="#059669" />
-                <text x="315" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Local Store</text>
-                <text x="315" y="83" text-anchor="middle" fill="#34D399" font-size="9" font-family="monospace">Offline-First Queue</text>
-
-                <line x1="405" y1="69" x2="453" y2="69" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 3" />
-
-                <rect x="453" y="40" width="175" height="58" rx="8" fill="#0F172A" stroke="#334155" />
-                <text x="540" y="66" text-anchor="middle" fill="#F8FAFC" font-size="11" font-family="monospace">Async Sync</text>
-                <text x="540" y="83" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">Reconcile on Network</text>
-              </svg>
-            </div>
+            <ProjectArchitectureDiagram
+              :order="selectedProject.order"
+              :title="selectedProject.title"
+            />
           </div>
 
           <!-- Case Study Body -->
