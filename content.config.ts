@@ -5,10 +5,11 @@ const experienceSchema = z.object({
   role: z.string(),
   company: z.string(),
   period: z.string(),
-  location: z.string(),
+  location: z.string().optional(),
   current: z.boolean().default(false),
   order: z.number().int(),
   stack: z.array(z.string()).default([]),
+  highlights: z.array(z.string()).default([]),
 })
 
 const projectSchema = z.object({

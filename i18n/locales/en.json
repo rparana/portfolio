@@ -1,14 +1,90 @@
 {
   "meta": {
-    "title": "Rafael Paraná — Frontend Architect & Software Engineer",
-    "description": "Portfolio of Rafael Paraná — Principal Frontend Architect & Software Engineer."
+    "title": "Rafael Paraná — Tech Lead & Software Architect",
+    "description": "Hands-on Tech Lead & Software Architect with 24+ years of experience in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Clean Architecture with Node.js & TypeScript."
   },
   "nav": {
+    "architecture": "Architecture & Work",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "downloadCv": "DOWNLOAD CV",
+    "localeSwitch": "PT / EN"
   },
   "status": {
-    "initialized": "Workspace initialized"
+    "badge": "AVAILABLE FOR TECH LEAD & PRINCIPAL ARCHITECT ROLES"
+  },
+  "hero": {
+    "headline": "Designing resilient distributed systems, high-throughput data pipelines, and empowering engineering teams.",
+    "bio": "Hands-on Tech Lead & Software Architect with 24+ years of experience bridging business strategy and technical execution. Specialized in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Clean Architecture with Node.js & TypeScript.",
+    "location": "PONTAL DO PARANÁ, BRAZIL • B2+ ENGLISH",
+    "metrics": [
+      {
+        "value": "24+ Years",
+        "label": "Software Engineering"
+      },
+      {
+        "value": "99.9% SLA",
+        "label": "Mission-Critical APIs"
+      },
+      {
+        "value": "Multi-Cloud",
+        "label": "GCP, AWS & Azure"
+      }
+    ]
+  },
+  "matrix": {
+    "title": "Architecture & Work",
+    "items": [
+      {
+        "number": "01",
+        "label": "ARCHITECTURE",
+        "skills": [
+          "Clean Architecture",
+          "DDD",
+          "TDD",
+          "SOLID",
+          "Microservices",
+          "Event-Driven"
+        ]
+      },
+      {
+        "number": "02",
+        "label": "STREAMING & DATA",
+        "skills": [
+          "Apache Kafka",
+          "CDC / Debezium",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis"
+        ]
+      },
+      {
+        "number": "03",
+        "label": "CLOUD & PLATFORM",
+        "skills": [
+          "GCP • AWS • Azure",
+          "Kubernetes / GKE",
+          "Terraform / IaC",
+          "CI/CD"
+        ]
+      },
+      {
+        "number": "04",
+        "label": "LEADERSHIP & SRE",
+        "skills": [
+          "Squad Leadership",
+          "Developer Experience",
+          "Datadog",
+          "DORA Metrics",
+          "FinOps"
+        ]
+      }
+    ]
+  },
+  "sections": {
+    "experience": "Experience",
+    "projects": "Selected Engineering Projects",
+    "contact": "Contact"
   }
 }

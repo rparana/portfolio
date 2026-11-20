@@ -78,13 +78,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Rafael Paraná — Frontend Architect & Software Engineer',
+      title: 'Rafael Paraná — Tech Lead & Software Architect',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Portfolio of Rafael Paraná — Principal Frontend Architect & Software Engineer.',
+          content: 'Hands-on Tech Lead & Software Architect with 24+ years of experience in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Node.js & TypeScript.',
         },
         { name: 'theme-color', content: '#F8FAFC' },
         { property: 'og:type', content: 'website' },
@@ -92,11 +92,11 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://rafaelparana.me' },
         {
           property: 'og:title',
-          content: 'Rafael Paraná — Frontend Architect & Software Engineer',
+          content: 'Rafael Paraná — Tech Lead & Software Architect',
         },
         {
           property: 'og:description',
-          content: 'Portfolio of Rafael Paraná — Principal Frontend Architect & Software Engineer.',
+          content: 'Hands-on Tech Lead & Software Architect with 24+ years of experience in Event-Driven Architecture, Kafka/CDC streaming, Multi-Cloud FinOps, and Node.js & TypeScript.',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
