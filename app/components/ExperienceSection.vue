@@ -54,7 +54,7 @@ const { data: experiences } = await useAsyncData(
               :key="idx"
               class="flex gap-3.5"
             >
-              <span class="font-mono text-xs font-medium text-slate-400">
+              <span class="font-mono text-xs font-medium text-ink-muted">
                 {{ String(idx + 1).padStart(2, '0') }}
               </span>
               <p class="text-sm leading-relaxed text-ink-muted">
