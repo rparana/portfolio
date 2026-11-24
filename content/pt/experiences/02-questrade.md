@@ -12,6 +12,6 @@ stack:
   - Datadog
   - GCP
 highlights:
-  - Projetou pipelines de dados CDC em tempo real com Kafka e Debezium para movimentação de dados confiável e de alta vazão.
-  - Estabeleceu padrões de infraestrutura multi-cloud com Terraform e GKE, observabilidade com Datadog e abstrações internas que reduziram a carga cognitiva dos times de produto.
+  - Liderança da squad de Engenharia de Plataforma (1:1s, PDIs, planejamento de entregas) e criação de esteiras CI/CD self-service para streaming de dados em tempo real (Apache Kafka & CDC/Debezium) em infra multi-cloud GKE/Terraform.
+  - Arquitetura de APIs de integração bidirecional (internas e externas) em stack poliglota (Node.js, Java 11+, .NET 8+, Python, Angular, React), observabilidade com Datadog e adoção de IA no ciclo de desenvolvimento.
 ---

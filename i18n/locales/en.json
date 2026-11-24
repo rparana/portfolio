@@ -84,8 +84,9 @@
         "number": "04",
         "label": "LEADERSHIP & SRE",
         "skills": [
-          "Squad Leadership",
+          "Squad Leadership (1:1s & PDIs)",
           "Developer Experience",
+          "AI-Assisted Dev",
           "Datadog",
           "DORA Metrics",
           "FinOps"
