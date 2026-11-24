@@ -3,7 +3,7 @@ title: jogosdeairsoft.com.br
 summary: Plataforma comunitária e diretório de eventos para praticantes de airsoft no Brasil, arquitetada com Nuxt 4, Node.js, MongoDB e cache de borda na Cloudflare.
 year: '2026'
 featured: true
-order: 2
+order: 3
 stack:
   - Node.js
   - Nuxt 4

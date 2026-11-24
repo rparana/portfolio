@@ -7,9 +7,91 @@ defineProps<{
 
 <template>
   <div class="rounded-xl border border-slate-800 bg-[#070B14] p-4 sm:p-5">
-    <!-- 01: High-Concurrency Seat Reservation POC -->
+    <!-- 01: Sentinel Orchestrator -->
     <svg
       v-if="order === 1"
+      viewBox="0 0 640 264"
+      class="h-auto w-full rounded-lg bg-[#0B1120]"
+      role="img"
+      :aria-label="`${title} — System Architecture`"
+    >
+      <defs>
+        <marker
+          id="arrow-cobalt-0"
+          viewBox="0 0 10 10"
+          refX="8"
+          refY="5"
+          markerWidth="6"
+          markerHeight="6"
+          orient="auto-start-reverse"
+        >
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563EB" />
+        </marker>
+        <marker
+          id="arrow-emerald-0"
+          viewBox="0 0 10 10"
+          refX="8"
+          refY="5"
+          markerWidth="6"
+          markerHeight="6"
+          orient="auto-start-reverse"
+        >
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669" />
+        </marker>
+      </defs>
+
+      <!-- Telemetry Overlay Badge -->
+      <rect x="12" y="10" width="616" height="26" rx="5" fill="#1E293B" stroke="#059669" stroke-width="1" stroke-dasharray="4 3" />
+      <circle cx="28" cy="23" r="3.5" fill="#059669" />
+      <text x="326" y="27" text-anchor="middle" fill="#6EE7B7" font-size="9.5" font-family="JetBrains Mono, monospace">
+        OpenTelemetry Correlated Tracing (.NET Aspire)
+      </text>
+
+      <!-- Row 1: Node 1 -> Node 2 -> Node 3 -->
+      <rect x="12" y="54" width="184" height="66" rx="6" fill="#1E293B" stroke="#2563EB" stroke-width="1.25" />
+      <text x="104" y="81" text-anchor="middle" fill="#F8FAFC" font-size="10.5" font-family="JetBrains Mono, monospace">Angular 22 Control Plane</text>
+      <text x="104" y="99" text-anchor="middle" fill="#93C5FD" font-size="8.5" font-family="JetBrains Mono, monospace">Signals + SignalR Client</text>
+
+      <line x1="196" y1="87" x2="226" y2="87" stroke="#2563EB" stroke-width="1.25" marker-start="url(#arrow-cobalt-0)" marker-end="url(#arrow-cobalt-0)" />
+
+      <rect x="228" y="54" width="184" height="66" rx="6" fill="#1E293B" stroke="#2563EB" stroke-width="1.25" />
+      <text x="320" y="81" text-anchor="middle" fill="#F8FAFC" font-size="10.5" font-family="JetBrains Mono, monospace">Sentinel.Api (.NET 10)</text>
+      <text x="320" y="99" text-anchor="middle" fill="#93C5FD" font-size="8.5" font-family="JetBrains Mono, monospace">Minimal APIs + SignalR Hub</text>
+
+      <line x1="412" y1="87" x2="442" y2="87" stroke="#059669" stroke-width="1.25" marker-end="url(#arrow-emerald-0)" />
+
+      <rect x="444" y="54" width="184" height="66" rx="6" fill="#1E293B" stroke="#059669" stroke-width="1.25" />
+      <text x="536" y="79" text-anchor="middle" fill="#F8FAFC" font-size="10.5" font-family="JetBrains Mono, monospace">Domain &amp; Policy Engine</text>
+      <text x="536" y="96" text-anchor="middle" fill="#6EE7B7" font-size="8.5" font-family="JetBrains Mono, monospace">State Machine + Guardrails</text>
+      <text x="536" y="109" text-anchor="middle" fill="#94A3B8" font-size="8" font-family="JetBrains Mono, monospace">Allow / HITL / Deny</text>
+
+      <!-- Connector: Node 3 -> Node 4 -->
+      <path
+        d="M 536 120 L 536 146 L 166 146 L 166 170"
+        fill="none"
+        stroke="#059669"
+        stroke-width="1.25"
+        stroke-dasharray="4 3"
+        marker-end="url(#arrow-emerald-0)"
+      />
+
+      <!-- Row 2: Node 4 -> Node 5 -->
+      <rect x="24" y="172" width="284" height="72" rx="6" fill="#1E293B" stroke="#2563EB" stroke-width="1.25" />
+      <text x="166" y="199" text-anchor="middle" fill="#F8FAFC" font-size="10.5" font-family="JetBrains Mono, monospace">PostgreSQL 17</text>
+      <text x="166" y="217" text-anchor="middle" fill="#93C5FD" font-size="8.5" font-family="JetBrains Mono, monospace">Workflow State + Audit Log</text>
+      <text x="166" y="231" text-anchor="middle" fill="#94A3B8" font-size="8" font-family="JetBrains Mono, monospace">Transactional Outbox + xmin</text>
+
+      <line x1="308" y1="208" x2="342" y2="208" stroke="#2563EB" stroke-width="1.25" marker-end="url(#arrow-cobalt-0)" />
+
+      <rect x="344" y="172" width="272" height="72" rx="6" fill="#1E293B" stroke="#059669" stroke-width="1.25" />
+      <text x="480" y="199" text-anchor="middle" fill="#F8FAFC" font-size="10.5" font-family="JetBrains Mono, monospace">Outbox Worker + Redis 7</text>
+      <text x="480" y="217" text-anchor="middle" fill="#6EE7B7" font-size="8.5" font-family="JetBrains Mono, monospace">FOR UPDATE SKIP LOCKED + Lock</text>
+      <text x="480" y="231" text-anchor="middle" fill="#94A3B8" font-size="8" font-family="JetBrains Mono, monospace">IAgentPlanner / Ollama</text>
+    </svg>
+
+    <!-- 02: High-Concurrency Seat Reservation POC -->
+    <svg
+      v-else-if="order === 2"
       viewBox="0 0 640 210"
       class="h-auto w-full"
       role="img"
@@ -79,9 +161,9 @@ defineProps<{
       <text x="497" y="176" text-anchor="middle" fill="#60A5FA" font-size="9" font-family="JetBrains Mono, monospace">Real-Time State Broadcast</text>
     </svg>
 
-    <!-- 02: jogosdeairsoft.com.br -->
+    <!-- 03: jogosdeairsoft.com.br -->
     <svg
-      v-else-if="order === 2"
+      v-else-if="order === 3"
       viewBox="0 0 640 210"
       class="h-auto w-full"
       role="img"
@@ -151,7 +233,7 @@ defineProps<{
       <text x="512" y="176" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="JetBrains Mono, monospace">Events, Fields &amp; Rules</text>
     </svg>
 
-    <!-- 03: ProntoOrcei & MostruárioApp -->
+    <!-- 04: ProntoOrcei & MostruárioApp -->
     <svg
       v-else
       viewBox="0 0 640 120"

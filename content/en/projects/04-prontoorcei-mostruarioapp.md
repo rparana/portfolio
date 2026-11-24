@@ -3,7 +3,7 @@ title: ProntoOrcei & MostruárioApp
 summary: Offline-first mobile applications built with Flutter to support field quoting and product catalog presentation in low-connectivity environments.
 year: '2023'
 featured: true
-order: 3
+order: 4
 stack:
   - Flutter
   - Offline-first

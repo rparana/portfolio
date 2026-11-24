@@ -3,7 +3,7 @@ title: POC de Reserva de Assentos de Alta Concorrência
 summary: Motor distribuído de bloqueio de assentos e disponibilidade em tempo real projetado para evitar reservas duplicadas sob picos de concorrência.
 year: '2025'
 featured: true
-order: 1
+order: 2
 stack:
   - Redis
   - MongoDB

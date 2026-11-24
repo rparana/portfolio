@@ -3,7 +3,7 @@ title: ProntoOrcei & MostruárioApp
 summary: Aplicativos móveis offline-first desenvolvidos em Flutter para apoiar orçamentos em campo e apresentação de catálogos em ambientes com baixa conectividade.
 year: '2023'
 featured: true
-order: 3
+order: 4
 stack:
   - Flutter
   - Offline-first

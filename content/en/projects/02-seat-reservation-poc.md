@@ -3,7 +3,7 @@ title: High-Concurrency Seat Reservation POC
 summary: Distributed seat-locking and real-time availability engine engineered to prevent double-booking under concurrent checkout spikes.
 year: '2025'
 featured: true
-order: 1
+order: 2
 stack:
   - Redis
   - MongoDB

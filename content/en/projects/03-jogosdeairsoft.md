@@ -3,7 +3,7 @@ title: jogosdeairsoft.com.br
 summary: Community platform and event directory for Brazilian airsoft players, architected with Nuxt 4, Node.js, MongoDB, and Cloudflare edge caching.
 year: '2026'
 featured: true
-order: 2
+order: 3
 stack:
   - Node.js
   - Nuxt 4
